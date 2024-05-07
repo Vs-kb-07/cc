@@ -1,0 +1,64 @@
+1.Aim-Converting Rs into Dollar and Call..
+1.netbean>file>new project>java web>web app>next>Right click on project name>new>web service>webservice name-newwebService>add package>finish>delete hello method>right click>insert code>Add web service operation>name>IntroDoller>Add>name-a,type-double>ok>write code after return "the indian rupees"+a+"in doller is : "+(a/83.17)>right click on project name>clean and build>deploy>expand node >right click on newWebService>Test Web service
+
+2.vs code>Asp.net framework>proj name>next>Empty create>next>right click on proj name>(add)>new item>webService.asmx>create>write code above public..[public double D2R (double doller){
+double ans=doller*82;
+[webMethod]
+public double R2D(double rupees){
+double ans=rupees/82;
+return ans;>run>D2R
+
+2nd method
+index file............
+@{
+    ViewBag.Title = "Currency converter";
+}<h2>rrency Converter</h2>
+<form method="post" action="@Url.Action("Convert","home")>
+    <label for=" currency"><select Conversion:</label>
+   <select id="currency" name="currency">
+       <option value="INRtoUSD">INR to USD</option>
+        <option value="USDtoINR">USD to INR </option>
+   </select><br /> <br />
+ <label for="amount">Enter Amount:</label>
+   <input type="text" id="amount" name="amount"/><br />
+   <input type="submit" value="Convert"/>
+</form>
+@if(ViewBag.Result != null)
+{
+    <h3>Result:@ViewBag.Result</h3>
+}
+home controller..........
+using CurrencyConverter.Models;
+using Microsoft.AspNetCore.Mvc;
+using System.Diagnostics;
+
+namespace CurrencyConverter.Controllers
+{
+    public class HomeController : Controller
+    {
+        private decimal conversionRate;
+
+        public ActionResult Index()
+        { return View();
+        }
+        [HttpPost]
+        public ActionResult Convert(string currency, decimal amount)
+        {
+            decimal result = 0;
+            decimal conversion = 0;
+
+            if(currency=="INRtoUDS")
+            {
+                conversionRate = 0.013m;
+            }
+            else if(currency== "USDtoINR")
+            {
+                conversionRate = 74.50m;
+            }
+            result = amount*conversionRate;
+            ViewBag.Result=result;
+            return View("Index");
+        }
+}
+}
+

@@ -1,0 +1,12 @@
+5.Aim-Installation and configuration of virtualization using a KVM.
+
+vmware>ubuntu>power on this vm>yes>sdsm>p/w enter-sdsm>enter>Ask me later>Terminal(search)type>* Sudo grep -c "svm\|vmx" /proc/cpuinfo> p/w@ubutu:sdsm(unable to see)
+* sudo apt-get install qemu-kvmlibvirt-bin bridge-utils virt-manager
+* sudo adduser aditi
+*sdsm5(unable to see) >enter>enter>yes
+*sudo adduser aditi libvirtd
+go to setting>select aditi>enter p/w=sdsm5>enter>terminal>
+*virsh -c qemu:///system list state
+*virt-manager.
+Click on new virtual machine in qemu and perform the following step
+

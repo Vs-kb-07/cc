@@ -1,0 +1,21 @@
+3.Create simple REST service.
+netbean>file>new proj>java web>web app>next>right click on proj>new>other>categories-web service>file type-Restful Web services from patterns> next>package name-com.service>MIME Type-text/html>finish>click on genericResc>write code form last copy @con..[@PUT
+    @Consumes("text/html")
+    public void putHtml(String content) {
+    }
+    @PUT
+    @Consumes(MediaType.TEXT_HTML)
+    @Path("/Uppercase")
+    public String toUppercaseMethod(String str)
+    {
+        return str.toUpperCase();
+    }
+    @PUT
+    @Consumes(MediaType.TEXT_HTML)
+    @Path("/Lowercase")
+    public String toLowercaseMethod(String str)
+    {
+        return str.toLowerCase();
+    }]
+right click on project name>clean&build>deploy>click on below TestRestful web service>ok
+

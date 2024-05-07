@@ -1,0 +1,3 @@
+7.FOSS- CLOUD
+vmware>create new vm>next>next>browser>foss-cloud>next>next>next>vm name-foss-cloud>next>max disk size-50.0>customize hd>4gb>n/w Adapter nat>close>finish>power on this virtual>enter useroot &password-admin
+*FC-node-configuration -n demo -system-password admin

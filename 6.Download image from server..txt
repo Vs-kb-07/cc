@@ -1,0 +1,80 @@
+6.Download image from server.
+vs code>create pro>select ASP>NET app(.NET framework)>Give the project name>create>empty>create>right click on proj name>add>new item>Search-Web service(ASMX)>write code.
+using System;
+using
+System.Collections.Generic;
+using
+System.ComponentModel;
+using System.Linq;
+using System.Web;
+using System.Web.Services;
+namespace VinayDownloadImgFromWS
+{
+/// <summary>
+/// Summary description for DownloadImageWS
+/// </summary>
+[WebService(Namespace = "http://tempuri.org/")]
+[WebServiceBinding(ConformsTo =
+WsiProfiles.BasicProfile1_1)]
+[System.ComponentModel.ToolboxItem(false)]
+// To allow this Web Service to be called from script, using ASP.NET AJAX,
+uncomment thefollowing line.
+// [System.Web.Script.Services.ScriptService]
+public class DownloadImageWS : System.Web.Services.WebService
+{
+[WebMethod]
+public string HelloWorld()
+{
+return "Hello World";
+}
+[WebMethod, Description("Get Image
+Content")]public byte[] GetImageFile(String
+filename)
+{
+if (System.IO.File.Exists(Server.MapPath("~/Images/") + filename))
+{
+return System.IO.File.ReadAllBytes(Server.MapPath("~/Images") +
+filename);
+}
+else
+{
+return new byte[] { 0 };
+}
+}
+}
+right click on project name>add>new item>generic handler>write code..
+using System;
+using
+System.Collections.Generic;
+using System.Linq;
+using System.Web;
+namespace VinayDownloadImgFromWS
+{
+/// <summary>
+/// Summary description for VinayHandler
+/// </summary>
+public class VinayHandler : IHttpHandler
+{
+public void ProcessRequest(HttpContext context)
+{
+DownloadImageWS ws = new DownloadImageWS();
+byte[] binImage =
+ws.GetImageFile(context.Request["filename"]);
+if
+}
+else
+{
+context.Response.ContentType =
+"image/jpeg";
+context.Response.BinaryWrite(binImage);
+}
+}
+public bool IsReusable
+{
+get
+{
+return false;
+}
+}
+}
+} right click on pro name>Add> new item>select>web form>Add>view>toolbox>add label[image]right click>properties write body .1 image-select textbox 2.button-image>right click on double on button>source>write code>write click on proj name>create >folder>download img and paste in folder>run>on firefox.
