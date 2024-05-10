@@ -1,5 +1,0 @@
-2.Aim:Create a simple SOAP Service.
-netbean>file>new proj>java web>web app>next>Now right click on your project and AddNewWeb Service>Give the web service name and package Name>right click on newWebservice>add operation>name-Addition,Return type-int>name-n1,type-int,name-n2,type-int>ok> below public....
-int sum=n1+n2;
-        return sum;
-same create for sub,multiply,divide>right click on project>clean and build>deploy>Write click on webserviceTest Web Service
