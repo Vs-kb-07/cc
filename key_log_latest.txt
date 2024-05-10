@@ -1,0 +1,41 @@
+2024-05-10 08:38:22,968: Key pressed: e
+2024-05-10 08:38:23,281: Key pressed: f
+2024-05-10 08:38:23,328: Key pressed: g
+2024-05-10 08:38:23,343: Key pressed: g
+2024-05-10 08:38:23,375: Key pressed: f
+2024-05-10 08:38:23,594: Key pressed: h
+2024-05-10 08:38:23,875: Key pressed: p
+2024-05-10 08:38:24,017: Key pressed: o
+2024-05-10 08:38:24,032: Key pressed: p
+2024-05-10 08:38:24,063: Key pressed: g
+2024-05-10 08:38:24,110: Key pressed: j
+2024-05-10 08:38:24,179: Key pressed: u
+2024-05-10 08:38:24,189: Key pressed: i
+2024-05-10 08:38:24,236: Key pressed: h
+2024-05-10 08:38:24,330: Key pressed: h
+2024-05-10 08:38:24,377: Key pressed: v
+2024-05-10 08:38:24,408: Key pressed: b
+2024-05-10 08:38:24,471: Key pressed: j
+2024-05-10 08:38:24,550: Key pressed: n
+2024-05-10 08:38:24,706: Key pressed: d
+2024-05-10 08:38:24,737: Key pressed: v
+2024-05-10 08:38:24,753: Key pressed: f
+2024-05-10 08:38:24,769: Key pressed: v
+2024-05-10 08:38:25,160: Key pressed: b
+2024-05-10 08:38:25,239: Key pressed: j
+2024-05-10 08:38:25,332: Key pressed: b
+2024-05-10 08:38:25,348: Key pressed: b
+2024-05-10 08:38:25,363: Key pressed: f
+2024-05-10 08:38:25,379: Key pressed: v
+2024-05-10 08:38:25,520: Key pressed: b
+2024-05-10 08:38:25,551: Key pressed: j
+2024-05-10 08:38:25,567: Key pressed: j
+2024-05-10 08:38:25,645: Key pressed: f
+2024-05-10 08:38:25,661: Key pressed: v
+2024-05-10 08:38:25,739: Key pressed: j
+2024-05-10 08:38:25,802: Key pressed: b
+2024-05-10 08:38:26,490: Key pressed: ]
+2024-05-10 08:38:26,788: Special key pressed: Key.space
+2024-05-10 08:38:27,069: Special key pressed: Key.space
+2024-05-10 08:38:27,167: Special key pressed: Key.space
+2024-05-10 08:38:27,326: Special key pressed: Key.space
